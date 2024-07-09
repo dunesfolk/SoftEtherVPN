@@ -10749,23 +10749,23 @@ void SiGetCurrentRegion(CEDAR *c, char *region, UINT region_size)
 // 
 bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
 {
-	char region[128];
-	bool ret = false;
-	// Validate arguments
-	if (c == NULL)
-	{
-		return false;
-	}
+	// char region[128];
+	// bool ret = false;
+	// // Validate arguments
+	// if (c == NULL)
+	// {
+	// 	return false;
+	// }
 
 
-	SiGetCurrentRegion(c, region, sizeof(region));
+	// SiGetCurrentRegion(c, region, sizeof(region));
 
-	if (StrCmpi(region, "JP") == 0 || StrCmpi(region, "CN") == 0)
-	{
-		ret = true;
-	}
+	// if (StrCmpi(region, "JP") == 0 || StrCmpi(region, "CN") == 0)
+	// {
+	// 	ret = true;
+	// }
 
-	return ret;
+	return false;
 }
 
 // Update the current region
